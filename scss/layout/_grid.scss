@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+.preview { position:absolute;opacity:0.9;width:auto;left:8px;right:10px; }
+.row-header { @include m.row-height(90px); }
+.header-cell { width:100%;background:v.$header-color;border-right-color:transparent; }
+.row-content { @include m.row-height(230px); }
+.side-column { background-color:v.$light;@include m.no-border;width:25%;padding-top:15px; }
+.menu-item { background-color:v.$accent-color;@include m.no-border;width:100%;height:15%;margin-bottom:10px; }
+.menu-item-last { background-color:v.$accent-color;@include m.no-border;width:100%;height:15%; }
+.empty-column { background-color:v.$light;@include m.no-border; }
+.aside-panel { background-color:v.$accent-color;@include m.no-border;width:100%;height:92%; }
+.row-footer { @include m.row-height(50px); }
+.footer-cell { width:100%;background:v.$footer-color;border-right-color:transparent; }
+.grid-guide { opacity:0.1; }
+.row-guide { @include m.row-height(370px); }
+.guide-first-column { background-color:v.$light;border-right:1px solid v.$guide-color;border-left:1px solid v.$guide-color; }
+.guide-column { background-color:v.$light;border-right:1px solid v.$guide-color; }
